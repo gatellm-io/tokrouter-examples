@@ -48,7 +48,7 @@ hardcodes it twice.
 | 09 | Rerank | `bge-m3-reranker` | `POST /v1/rerank` | `09_rerank.py` | `09-rerank.ts` |
 | 10 | Image generation | `gpt-image-2.5-sunburst` | `POST /v1/images/generations` | `10_images.py` | `10-images.ts` |
 | 11 | Speech-to-text | `whisper` | `POST /v1/audio/transcriptions` | `11_audio_transcription.py` | `11-audio-transcription.ts` |
-| 12 | Realtime voice (WebSocket) | `aliyun/qwen3.5-omni-plus-realtime` | `GET /v1/realtime` | `12_realtime.py` | `12-realtime.ts` |
+| 12 | Realtime voice (WebSocket) | `qwen3.8-omni-flash-realtime` | `GET /v1/realtime` | `12_realtime.py` | `12-realtime.ts` |
 | 13 | One SDK, many vendors | `kimi-k3`, `glm-5.3`, `grok-4.7`, `qwen3.7-plus` | `POST /v1/chat/completions`, loop over models | `13_multi_vendor.py` | `13-multi-vendor.ts` |
 | 14 | Jev typed decisions | `jev` | `POST /v1/systemone` | `14_jev_decisions.py` | `14-jev-decisions.ts` |
 
@@ -162,7 +162,8 @@ your gateway — `03_list_models` is the authority.
 | `bge-m3-embedding` | `/v1/embeddings` | 08 |
 | `bge-m3-reranker` | `/v1/rerank` | 09 |
 | `aliyun/qwen-audio-3.0-asr-flash-streaming` | `/v1/audio/transcriptions` | 11 |
-| `aliyun/qwen3.5-omni-plus-realtime` | `/v1/realtime` (WebSocket) | 12 |
+| `qwen3.8-omni-flash-realtime` | `/v1/realtime` (WebSocket) | 12 |
+| `aliyun/qwen3.5-omni-plus-realtime` | `/v1/realtime` (WebSocket) | 12 (previous generation; verified on the test gateway) |
 
 ### Zhipu, Moonshot, xAI
 

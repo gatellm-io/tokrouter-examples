@@ -12,7 +12,10 @@ import WebSocket from "ws";
 
 import { apiKey, baseUrl, model } from "./common.js";
 
-const MODEL = model("MODEL_REALTIME", "aliyun/qwen3.5-omni-plus-realtime");
+const MODEL = model("MODEL_REALTIME", "qwen3.8-omni-flash-realtime");
+// Older gateways may only expose the 3.5 generation. On a 404, set
+//   MODEL_REALTIME=aliyun/qwen3.5-omni-plus-realtime
+// or pick another realtime model from `03-list-models.ts`.
 
 function wsUrl(): string {
   const origin = baseUrl().replace(/^https:\/\//, "wss://").replace(/^http:\/\//, "ws://");
@@ -54,6 +57,22 @@ const done = new Promise<void>((resolve, reject) => {
       ws.close();
       resolve();
     }
+  });
+
+  ws.on("unexpected-response", (_req, res) => {
+    clearTimeout(timer);
+    if (res.statusCode === 404) {
+      console.error(
+        `the gateway does not expose realtime model ${JSON.stringify(MODEL)}.\n` +
+          "Set MODEL_REALTIME to a model listed by 03-list-models.ts " +
+          "(older gateways: aliyun/qwen3.5-omni-plus-realtime).",
+      );
+    } else {
+      console.error(`websocket handshake failed: HTTP ${res.statusCode}`);
+    }
+    ws.terminate();
+    process.exitCode = 1;
+    resolve();
   });
 
   ws.on("error", (err) => {
