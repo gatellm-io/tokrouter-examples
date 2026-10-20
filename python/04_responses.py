@@ -13,7 +13,7 @@ client = OpenAI(base_url=openai_base_url(), api_key=api_key())
 
 heading("responses")
 resp = client.responses.create(
-    model=model("MODEL_RESPONSES", "gpt-6.1-sol"),
+    model=model("MODEL_RESPONSES", "gpt-6-luna"),
     input="Write a haiku about routing requests.",
 )
 

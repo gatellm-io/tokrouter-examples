@@ -12,7 +12,7 @@ const client = new OpenAI({ baseURL: openaiBaseUrl(), apiKey: apiKey() });
 
 heading("responses");
 const resp = await client.responses.create({
-  model: model("MODEL_RESPONSES", "gpt-6.1-sol"),
+  model: model("MODEL_RESPONSES", "gpt-6-luna"),
   input: "Write a haiku about routing requests.",
 });
 

@@ -10,7 +10,7 @@ import { apiKey, model, openaiBaseUrl } from "./common.js";
 
 const client = new OpenAI({ baseURL: openaiBaseUrl(), apiKey: apiKey() });
 
-const models = (process.env.MODELS_MULTI_VENDOR ?? model("MODELS_MULTI_VENDOR", "kimi-k3,glm-5.3,grok-4.7,qwen3.8-max"))
+const models = (process.env.MODELS_MULTI_VENDOR ?? model("MODELS_MULTI_VENDOR", "kimi-k3,glm-5.3,grok-4.7,qwen3.7-plus"))
   .split(",")
   .map((m) => m.trim())
   .filter(Boolean);

@@ -13,7 +13,7 @@ client = OpenAI(base_url=openai_base_url(), api_key=api_key())
 
 models = [
     m.strip()
-    for m in model("MODELS_MULTI_VENDOR", "kimi-k3,glm-5.3,grok-4.7,qwen3.8-max").split(",")
+    for m in model("MODELS_MULTI_VENDOR", "kimi-k3,glm-5.3,grok-4.7,qwen3.7-plus").split(",")
     if m.strip()
 ]
 

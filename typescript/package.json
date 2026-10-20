@@ -17,6 +17,7 @@
     "11": "tsx src/11-audio-transcription.ts",
     "12": "tsx src/12-realtime.ts",
     "13": "tsx src/13-multi-vendor.ts",
+    "14": "tsx src/14-jev-decisions.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
