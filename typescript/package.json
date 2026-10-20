@@ -1,0 +1,34 @@
+{
+  "name": "gatellm-examples",
+  "private": true,
+  "type": "module",
+  "description": "Runnable gateway examples (OpenAI / Anthropic / Gemini / DashScope, plus embeddings, rerank, images, audio and realtime)",
+  "scripts": {
+    "01": "tsx src/01-first-call.ts",
+    "02": "tsx src/02-streaming.ts",
+    "03": "tsx src/03-list-models.ts",
+    "04": "tsx src/04-responses.ts",
+    "05": "tsx src/05-anthropic-messages.ts",
+    "06": "tsx src/06-gemini.ts",
+    "07": "tsx src/07-dashscope-native.ts",
+    "08": "tsx src/08-embeddings.ts",
+    "09": "tsx src/09-rerank.ts",
+    "10": "tsx src/10-images.ts",
+    "11": "tsx src/11-audio-transcription.ts",
+    "12": "tsx src/12-realtime.ts",
+    "13": "tsx src/13-multi-vendor.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "@google/genai": "^2.30.0",
+    "openai": "^7.39.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.18.0",
+    "tsx": "^4.23.0",
+    "typescript": "^5.7.0"
+  }
+}
