@@ -1,6 +1,6 @@
 # OpenAI Responses API with GPT-6 Luna
 
-> Scenario 04 of the [gatellm examples](../../README.md).
+> Scenario 04 of the [tokrouter examples](../../README.md).
 
 The Responses shape is not Chat Completions. Reasoning models may return several output items; the text lives in `output[*].content[*].text`, exposed by the SDK as `output_text`.
 

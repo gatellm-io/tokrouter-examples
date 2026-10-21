@@ -1,6 +1,6 @@
 # One SDK, Four Vendors: Kimi K3, GLM-5.3, Grok 4.7, Qwen 3.7 Plus
 
-> Scenario 13 of the [gatellm examples](../../README.md).
+> Scenario 13 of the [tokrouter examples](../../README.md).
 
 The core point of the gateway in one file: same client, same request shape, four upstream vendors — only `model` changes. A failing model is reported and the loop continues.
 

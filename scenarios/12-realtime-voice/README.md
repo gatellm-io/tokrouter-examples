@@ -1,6 +1,6 @@
 # Realtime Voice with Qwen3.8 Omni Flash Realtime
 
-> Scenario 12 of the [gatellm examples](../../README.md).
+> Scenario 12 of the [tokrouter examples](../../README.md).
 
 The client speaks the OpenAI Realtime protocol (`Authorization` header, `OpenAI-Beta: realtime=v1`, `?model=`); the gateway bridges to an OpenAI or DashScope upstream. Text deltas arrive as `response.text.delta` on DashScope and `response.output_text.delta` on OpenAI — the examples handle both. Audio sample rates differ per upstream and the gateway does not resample.
 

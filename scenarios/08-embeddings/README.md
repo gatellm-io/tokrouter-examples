@@ -1,6 +1,6 @@
 # Embeddings with text-embedding-v4
 
-> Scenario 08 of the [gatellm examples](../../README.md).
+> Scenario 08 of the [tokrouter examples](../../README.md).
 
 Embedding dimensions are model-specific; the example prints the dimension so a mismatch with your vector store is obvious immediately.
 

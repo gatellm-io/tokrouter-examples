@@ -1,5 +1,5 @@
 {
-  "name": "gatellm-examples",
+  "name": "tokrouter-examples",
   "private": true,
   "type": "module",
   "description": "Runnable gateway examples (OpenAI / Anthropic / Gemini / DashScope, plus embeddings, rerank, images, audio and realtime)",

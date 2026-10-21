@@ -1,6 +1,6 @@
 # Gemini 3.8 Flash generateContent
 
-> Scenario 06 of the [gatellm examples](../../README.md).
+> Scenario 06 of the [tokrouter examples](../../README.md).
 
 The Google Gen AI SDK appends `/v1beta/models/…` itself, so `base_url` is the gateway origin. Passing `${origin}/v1beta` would double the version segment.
 

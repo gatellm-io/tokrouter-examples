@@ -1,6 +1,6 @@
 # List Every Model Your Key Can Call
 
-> Scenario 03 of the [gatellm examples](../../README.md).
+> Scenario 03 of the [tokrouter examples](../../README.md).
 
 Run this first when another scenario returns `model_not_found`: it reports the authoritative catalog for your key and gateway.
 

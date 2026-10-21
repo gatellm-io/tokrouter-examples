@@ -1,6 +1,6 @@
 # Speech-to-Text with Whisper
 
-> Scenario 11 of the [gatellm examples](../../README.md).
+> Scenario 11 of the [tokrouter examples](../../README.md).
 
 Multipart upload. `assets/sample.wav` is a generated tone used only to exercise the endpoint — its transcript is not a speech-quality benchmark. Text-to-speech is intentionally absent: this catalog has no TTS-capable upstream.
 

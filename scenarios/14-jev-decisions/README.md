@@ -1,6 +1,6 @@
 # Jev Typed Decisions over TypeSafe System One
 
-> Scenario 14 of the [gatellm examples](../../README.md).
+> Scenario 14 of the [tokrouter examples](../../README.md).
 
 Jev does not generate text. Send a `state` plus named typed `questions`; it answers each with calibrated probabilities. `choice` takes an object of label → description, `score` takes an **array** (index = level; an object is rejected with 422), `noul` returns one probability. No streaming, and no cross-protocol conversion to/from chat.
 

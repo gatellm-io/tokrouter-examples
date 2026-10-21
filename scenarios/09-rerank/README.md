@@ -1,6 +1,6 @@
 # Rerank with BGE-M3 Reranker
 
-> Scenario 09 of the [gatellm examples](../../README.md).
+> Scenario 09 of the [tokrouter examples](../../README.md).
 
 Rerank has no OpenAI SDK surface; the request is a plain JSON POST with `model`, `query` and `documents`.
 

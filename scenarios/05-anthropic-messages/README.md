@@ -1,6 +1,6 @@
 # Anthropic Messages with Claude Fable 5.1
 
-> Scenario 05 of the [gatellm examples](../../README.md).
+> Scenario 05 of the [tokrouter examples](../../README.md).
 
 The Anthropic SDK appends `/v1/messages` itself, so `base_url` is the gateway **origin** — not `${origin}/v1`.
 

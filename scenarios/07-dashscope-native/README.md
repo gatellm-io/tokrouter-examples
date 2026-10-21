@@ -1,6 +1,6 @@
 # DashScope Native Path with Qwen 3.8 Max
 
-> Scenario 07 of the [gatellm examples](../../README.md).
+> Scenario 07 of the [tokrouter examples](../../README.md).
 
 This is the DashScope wire format (`input` / `parameters`), not the OpenAI shape. The gateway exposes it under `/v1` with the official `/api` prefix removed.
 

@@ -1,4 +1,4 @@
-# gatellm examples
+# tokrouter examples
 
 Minimal, runnable examples for every endpoint family the gateway exposes.
 Each scenario exists twice — Python (`python/`) and TypeScript (`typescript/`) — and is a

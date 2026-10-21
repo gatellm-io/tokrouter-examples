@@ -1,6 +1,6 @@
 # Image Generation with GPT Image 2.5 Sunburst
 
-> Scenario 10 of the [gatellm examples](../../README.md).
+> Scenario 10 of the [tokrouter examples](../../README.md).
 
 The response is base64 (`b64_json`), not a URL. The examples write the file to `out/`, which is git-ignored.
 

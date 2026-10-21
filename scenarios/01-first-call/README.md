@@ -1,6 +1,6 @@
 # First Call with GPT-6.1 Sol (OpenAI SDK)
 
-> Scenario 01 of the [gatellm examples](../../README.md).
+> Scenario 01 of the [tokrouter examples](../../README.md).
 
 The smallest possible change from a stock OpenAI program: keep the SDK, point `base_url` at the gateway.
 

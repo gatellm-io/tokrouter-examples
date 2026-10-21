@@ -1,6 +1,6 @@
 # Stream DeepSeek V4.1 Flash with the OpenAI SDK
 
-> Scenario 02 of the [gatellm examples](../../README.md).
+> Scenario 02 of the [tokrouter examples](../../README.md).
 
 SSE frames are forwarded unchanged. No proxy-buffering switch is needed on the client side.
 
